@@ -1,0 +1,29 @@
+{
+    "name": "landio_landing_page",
+    "version": "1.0.0",
+    "description": "Landing page theme: named: landio for Uexel",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "Theme",
+        "landio",
+        "Uxel"
+    ],
+    "author": "zahid karim rumi",
+    "license": "ISC",
+    "devDependencies": {
+        "grunt": "^0.4.5",
+        "grunt-contrib-connect": "^2.0.0",
+        "grunt-contrib-jade": "^0.15.0",
+        "grunt-contrib-watch": "^0.6.1",
+        "grunt-prettify": "~0.4.0",
+        "jquery": "^2.1.4"
+    },
+    "dependencies": {
+        "grunt-contrib-pug": "^2.0.0",
+        "hover.css": "~2.0.2",
+        "pug": "^2.0.3"
+    }
+}

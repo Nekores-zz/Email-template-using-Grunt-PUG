@@ -1,0 +1,108 @@
+include ../partials/tempHeader.pug
+
+- customerName = "customer name"
+- customerAddress = "customer Address"
+- customerCity = "customer City"
+- customerPostcode = "customer Postcode"
+- customerEmail = "customer Email"
+
+body(style="margin-top:20px; margin-bottom:20px;")
+		table(border='0', cellspacing='0', cellpadding='0', style='margin: 0; padding: 0; width: 100%;')
+			tr
+				td(align='center', style='margin: 0;')
+					table.container-width(border='0', cellspacing='0', cellpadding='0', style='margin: 0; padding: 0; max-width: 720px; width: 100%; background: #fff; border:1px solid #DBDBDB; box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);')
+						tr
+							td.padding-lr(style='margin: 0; padding-left: 30px; padding-right: 30px; padding-top: 20px;')
+								table(border='0', cellspacing='0', cellpadding='0', style='margin: 0; padding: 0; width: 100%;')
+									tr
+										td(style='margin: 0; padding: 0; padding-bottom: 0px;')
+											table(border='0', cellspacing='0', cellpadding='0', style='margin: 0; padding: 0; width: 100%;')
+												tr
+													td.w-60(valign='top', style='margin: 0; padding: 0; width: 83%; padding-top: 20px; padding-bottom: 20px;')
+														table(border='0', cellspacing='0', cellpadding='0', style='margin: 0; padding: 0; width: 100%;')
+															tr
+																td(valign='top', align='left', style='margin: 0; padding: 0;')
+																	img.mobile-logo(style='max-width: 300px; height: auto;', src="https://goo.gl/Eyjx57", alt='here is logo')
+															tr
+																td(style='margin: 0; padding: 0; padding-top: 15px;')
+																	table(border='0', cellspacing='0', cellpadding='0', style='margin: 0; padding: 0; width: 100%;')
+																		tr
+																			td.fs-15(align='left', style='margin: 0; padding-bottom: 5px; font-size:15px; text-align: left;')
+																				tr
+																						td(style='font-weight: bold; font-size: 15px; letter-spacing: 0.01em; text-align: left; color: #29262c;') Date of issue:
+																								span(style='font-weight: 300; font-size: 13px; text-align: left; color: #575756; line-height: 17px; letter-spacing: 0.2px;') &nbsp;17/09/18
+																		tr
+																			td.fs-13(align='left', style='margin: 0; padding-bottom: 5px; font-size:15px; text-align: left;')
+																				tr
+																						td(style='font-weight: bold; font-size: 15px; letter-spacing: 0.01em; text-align: left; color: #29262c;')
+																								| Customer:
+																				tr
+																						td(style='font-weight: 300; font-size: 13px; text-align: left; color: #575756; line-height: 17px; letter-spacing: 0.2px;')
+																								| Name Here
+																				tr
+																						td(style='font-weight: 300; font-size: 13px; text-align: left; color: #575756; line-height: 17px; letter-spacing: 0.2px;')
+																								| Email Here
+																				tr
+																						td(style='font-weight: 300; font-size: 13px; text-align: left; color: #575756; line-height: 17px; letter-spacing: 0.2px;')
+																								| Address, Address, Address, Postcode
+																								
+													td.w-15(valign='top', style='margin: 0; padding: 0; width: 17%; padding-top: 20px; padding-bottom: 20px;')
+														table(border='0', cellspacing='0', cellpadding='0', style='margin: 0; padding: 0; width: 100%;')
+															tr
+																td.fs-15(align='left', style='margin: 0; padding-bottom: 10px; font-size:30px; font-weight:600; text-align: left; text-transform: uppercase; font-weight: bold; font-size: 16px; text-align: center; color: #29262c;')
+																		| QUOTe
+									
+									//-   title and desc section
+									tr
+										td(style="margin: 0; padding: 0; width: 100%;")
+											table(border="0", cellspacing="0", cellpadding="0", style="margin: 0; padding: 0; width: 100%;")
+												tr
+													td(style="margin: 0; padding:0px;")
+														table(border="0", cellspacing="0", cellpadding="0", style="margin:0px; padding: 10px; width: 100%; border:1px solid #DBDBDB;")
+															tr
+																td(style='margin:0; padding:10px; font-weight: bold; font-size: 15px; letter-spacing: 0.01em; text-align: left; color: #29262c; padding-bottom:4px; ').
+																	Description
+															tr
+																td(style='margin:0; padding:10px; padding-top:0; font-weight: 300; font-size: 13px; text-align: left; color: #575756; line-height: 17px; letter-spacing: 0.2px;').
+																	Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, facilis illum cumque voluptatem aspernatur rem fugiat quibusdam id harum, obcaecati, temporibus ipsam ex assumenda porro ut saepe quae! Fuga,natus.
+												tr
+													td(style="margin: 0; padding: 0;")
+														table(border="0", cellspacing="0", cellpadding="0", style="margin:0px; padding: 10px; width: 100%; border:1px solid #DBDBDB; margin-top:8px; margin-bottom:7px;")
+															tr
+																td(style=' margin:0; padding:10px; font-weight: bold; font-size: 15px; letter-spacing: 0.01em; text-align: left; color: #29262c; ') Price
+																	span(style='font-weight: 300; font-size: 13px; text-align: left; color: #575756; line-height: 17px; letter-spacing: 0.2px;') &nbsp;$1200
+									//- payment banner section
+									include ../partials/tempPaymentBanner.pug
+
+									//- right content pay
+									td(style="margin: 0; padding: 0; width: 100%;")
+											table(border="0", cellspacing="0", cellpadding="0", style="margin: 0; padding: 0; width: 100%;")
+												tr
+													td(style="margin: 0; padding:0px;")
+														table(border="0", cellspacing="0", cellpadding="0" , align="right" , style="margin:0px; padding: 10px; width: 100%; margin-top:25px; margin-bottom:20px;")
+															tr(align="right")
+																td(style='margin:0; font-weight: bold; font-size: 15px; letter-spacing: 0.01em; color: #29262c;').
+																	<span style="width: 206px; height: 29px; font-weight: 300; font-size: 12px; text-align: left; color: #575756;">Notify your &lt;trader&gt; that you would like to accept this &lt;quote/estimate&gt;</span>&nbsp; &nbsp;<button style="border:none; margin:0; padding:0; width: 104.42px; height: 34px; border-radius: 2px; background: #b9ffb7; font-weight: bold; font-size: 15px;text-align: center;color: #29262c;">Accept Job</button>
+									//- notes section
+									tr
+										td(style="margin: 0; padding: 0; width: 100%;")
+											table(border="0", cellspacing="0", cellpadding="0", style="margin: 0; padding: 0; width: 100%; margin-bottom:10px;")
+												tr
+													td(style="margin: 0; padding:0px;")
+														table(border="0", cellspacing="0", cellpadding="0", style="margin:0px; padding: 10px; width: 100%; border:1px solid #DBDBDB; margin-top:7px; margin-bottom:8px;")
+															tr
+																td(style='margin:0; padding:10px; font-weight: bold; font-size: 15px; letter-spacing: 0.01em; text-align: left; color: #29262c; padding-bottom:4px; ').
+																	Notes
+															tr
+																td(style='margin:0; padding:10px; padding-top:0; font-weight: 300; font-size: 13px; text-align: left; color: #575756; line-height: 17px; letter-spacing: 0.2px;').
+																	Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, facilis illum cumque voluptatem aspernatur rem fugiat quibusdam id harum, obcaecati, temporibus ipsam ex assumenda porro ut saepe quae! Fuga,natus.
+
+																	
+																//- td(valign='top', style='margin: 0; padding: 0; width: 25%;')
+																//-     table(border='0', cellspacing='0', cellpadding='0', style='margin: 0; padding: 0; width: 100%;')
+																//-     //- if paymentsEnabled
+																//-     //-     include ../partials/payments.pug
+																//-     tr
+																//-         td.fs-10(align='center', style='padding-bottom: 5px; color: #808080; font-size: 13px; padding-top: 25px; text-align: center;')
+						include ../partials/tempFooter.pug
+									
